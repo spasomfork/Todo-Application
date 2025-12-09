@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Backend API for Todo Application",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "jest --runInBand --verbose"

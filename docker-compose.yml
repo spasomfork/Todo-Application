@@ -50,13 +50,5 @@ services:
     depends_on:
       - backend
 
-  # Separate container for running backend tests
-  test_backend:
-    build: ./backend
-    container_name: todo_backend_test
-    command: npm run test
-    depends_on:
-      - db
-
 volumes:
   db_data:
