@@ -1,11 +1,11 @@
 import React from "react";
-
 export default function TaskList({ tasks, onDone }) {
   return (
     <div className="space-y-4">
       {tasks.map((task) => (
         <div
           key={task.id}
+          data-cy="task-item" 
           className="
             bg-white p-5 rounded-2xl shadow-md flex justify-between items-center
             transition-transform duration-300
@@ -16,7 +16,6 @@ export default function TaskList({ tasks, onDone }) {
             <h3 className="font-semibold text-lg text-gray-800">{task.title}</h3>
             <p className="text-gray-600">{task.description}</p>
           </div>
-
           {/* SWIPE DONE BUTTON */}
           <button
             onClick={() => onDone(task.id)}
