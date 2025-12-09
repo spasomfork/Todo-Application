@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Input boxes */
+.input-box {
+  @apply bg-white p-3 rounded-xl border border-gray-300 
+         shadow-sm w-full mb-4 
+         focus:ring-2 focus:ring-blue-400 outline-none transition;
+}
+
+/* Blue Add button */
+.add-btn {
+  @apply bg-blue-500 text-white font-semibold py-3 
+         rounded-xl shadow-md hover:bg-blue-600 transition;
+}
+
+/* Soft task cards */
+.task-card-ui {
+  @apply bg-white p-5 rounded-2xl shadow-md 
+         flex justify-between items-center;
+}
+
+/* Outline Done button (matches screenshot) */
+.done-btn {
+  @apply border border-gray-300 px-5 py-1.5 rounded-full 
+         font-medium hover:bg-yellow-100 transition;
+}
