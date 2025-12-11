@@ -5,11 +5,11 @@ export default function TaskModal({ onAdd }) {
   const [description, setDescription] = useState("");
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     if (!e.target.checkValidity()) {
       return;
     }
 
-    e.preventDefault();
     onAdd({ title: title.trim(), description: description.trim() });
     setTitle("");
     setDescription("");
